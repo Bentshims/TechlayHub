@@ -1,28 +1,31 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Users, Lightbulb, Award } from 'lucide-react';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   const values = [
     {
       icon: Target,
-      title: "Mission",
-      description: "Transformer les idées en solutions digitales innovantes qui propulsent votre business vers le succès."
+      title: t('about.mission.title'),
+      description: t('about.mission.description')
     },
     {
       icon: Users,
-      title: "Équipe",
-      description: "Une équipe passionnée de développeurs et designers experts dans les dernières technologies web."
+      title: t('about.team.title'),
+      description: t('about.team.description')
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
-      description: "Nous restons à la pointe des technologies pour vous offrir des solutions modernes et performantes."
+      title: t('about.innovation.title'),
+      description: t('about.innovation.description')
     },
     {
       icon: Award,
-      title: "Qualité",
-      description: "Chaque projet est traité avec le plus grand soin pour garantir un résultat à la hauteur de vos attentes."
+      title: t('about.quality.title'),
+      description: t('about.quality.description')
     }
   ];
 
@@ -33,18 +36,13 @@ const AboutSection = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              À propos de TECHLAY HUB
+              {t('about.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Fondée avec la vision de démocratiser l'accès aux technologies web de pointe, 
-              TECHLAY HUB est votre partenaire de confiance pour tous vos projets digitaux. 
-              Nous combinons créativité, expertise technique et approche client-centrique 
-              pour créer des expériences digitales exceptionnelles.
+              {t('about.description1')}
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Notre approche collaborative nous permet de comprendre parfaitement vos besoins 
-              et de vous accompagner à chaque étape de votre transformation digitale. 
-              De la conception à la maintenance, nous sommes là pour faire de votre vision une réalité.
+              {t('about.description2')}
             </p>
             
             <div className="flex flex-wrap gap-4">

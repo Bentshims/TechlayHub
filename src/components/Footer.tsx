@@ -1,7 +1,9 @@
 
 import { Code } from 'lucide-react';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const links = {
@@ -40,8 +42,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Votre partenaire de confiance pour tous vos projets digitaux. 
-              Nous transformons vos idées en solutions web innovantes et performantes.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               {['LinkedIn', 'Twitter', 'GitHub', 'Instagram'].map((social) => (
@@ -58,7 +59,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4">{t('footer.services')}</h3>
             <ul className="space-y-2">
               {links.services.map((link) => (
                 <li key={link.label}>
@@ -75,7 +76,7 @@ const Footer = () => {
 
           {/* Entreprise */}
           <div>
-            <h3 className="font-semibold mb-4">Entreprise</h3>
+            <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-2">
               {links.company.map((link) => (
                 <li key={link.label}>
@@ -92,7 +93,7 @@ const Footer = () => {
 
           {/* Légal */}
           <div>
-            <h3 className="font-semibold mb-4">Légal</h3>
+            <h3 className="font-semibold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
               {links.legal.map((link) => (
                 <li key={link.label}>
@@ -111,10 +112,10 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} TECHLAY HUB. Tous droits réservés.
+              © {currentYear} TECHLAY HUB. {t('footer.copyright')}
             </p>
             <p className="text-muted-foreground text-sm">
-              Fait avec ❤️ à Paris
+              {t('footer.madeWith')}
             </p>
           </div>
         </div>

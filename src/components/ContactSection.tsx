@@ -6,8 +6,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,8 +21,8 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message envoyé !",
-      description: "Nous vous répondrons dans les plus brefs délais.",
+      title: t('contact.form.success.title'),
+      description: t('contact.form.success.description'),
     });
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
@@ -35,19 +37,19 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Email",
+      title: t('contact.info.email'),
       content: "contact@techlayhub.com",
       link: "mailto:contact@techlayhub.com"
     },
     {
       icon: Phone,
-      title: "Téléphone",
+      title: t('contact.info.phone'),
       content: "+33 1 23 45 67 89",
       link: "tel:+33123456789"
     },
     {
       icon: MapPin,
-      title: "Adresse",
+      title: t('contact.info.address'),
       content: "Paris, France",
       link: "#"
     }
@@ -58,18 +60,17 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Contactez-nous
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Prêt à donner vie à votre projet ? Discutons ensemble de vos besoins 
-            et découvrons comment nous pouvons vous aider à atteindre vos objectifs.
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold mb-6">Restons en contact</h3>
+            <h3 className="text-2xl font-bold mb-6">{t('contact.info.title')}</h3>
             {contactInfo.map((info, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/50">
                 <CardContent className="p-6">
@@ -92,7 +93,7 @@ const ContactSection = () => {
             ))}
             
             <div className="mt-8">
-              <h4 className="font-semibold mb-4">Suivez-nous</h4>
+              <h4 className="font-semibold mb-4">{t('contact.info.follow')}</h4>
               <div className="flex space-x-4">
                 {['LinkedIn', 'Twitter', 'GitHub'].map((social) => (
                   <a
@@ -115,7 +116,7 @@ const ContactSection = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2">
-                        Nom complet
+                        {t('contact.form.name')}
                       </label>
                       <Input
                         id="name"
@@ -124,12 +125,12 @@ const ContactSection = () => {
                         onChange={handleChange}
                         required
                         className="h-12"
-                        placeholder="Votre nom"
+                        placeholder={t('contact.form.namePlaceholder')}
                       />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium mb-2">
-                        Email
+                        {t('contact.form.email')}
                       </label>
                       <Input
                         id="email"
@@ -139,14 +140,14 @@ const ContactSection = () => {
                         onChange={handleChange}
                         required
                         className="h-12"
-                        placeholder="votre@email.com"
+                        placeholder={t('contact.form.emailPlaceholder')}
                       />
                     </div>
                   </div>
                   
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                      Sujet
+                      {t('contact.form.subject')}
                     </label>
                     <Input
                       id="subject"
@@ -155,13 +156,13 @@ const ContactSection = () => {
                       onChange={handleChange}
                       required
                       className="h-12"
-                      placeholder="Sujet de votre message"
+                      placeholder={t('contact.form.subjectPlaceholder')}
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Message
+                      {t('contact.form.message')}
                     </label>
                     <Textarea
                       id="message"
@@ -170,7 +171,7 @@ const ContactSection = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      placeholder="Décrivez votre projet ou posez vos questions..."
+                      placeholder={t('contact.form.messagePlaceholder')}
                     />
                   </div>
                   
@@ -180,7 +181,7 @@ const ContactSection = () => {
                     className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 h-12"
                   >
                     <Send className="w-5 h-5 mr-2" />
-                    Envoyer le message
+                    {t('contact.form.send')}
                   </Button>
                 </form>
               </CardContent>

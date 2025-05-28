@@ -2,8 +2,11 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const PortfolioSection = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
       title: "E-commerce Fashion",
@@ -60,11 +63,10 @@ const PortfolioSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Notre Portfolio
+            {t('portfolio.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Découvrez quelques-uns de nos projets récents qui illustrent notre expertise 
-            et notre capacité à créer des solutions digitales innovantes.
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
@@ -82,11 +84,11 @@ const PortfolioSection = () => {
                   <div className="flex space-x-4">
                     <Button size="sm" className="bg-white text-gray-900 hover:bg-gray-100">
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      Voir
+                      {t('portfolio.view')}
                     </Button>
                     <Button size="sm" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
                       <Github className="w-4 h-4 mr-2" />
-                      Code
+                      {t('portfolio.code')}
                     </Button>
                   </div>
                 </div>
@@ -124,7 +126,7 @@ const PortfolioSection = () => {
 
         <div className="text-center mt-12">
           <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-            Voir tous nos projets
+            {t('portfolio.viewAll')}
           </Button>
         </div>
       </div>

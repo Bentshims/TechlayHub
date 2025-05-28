@@ -1,43 +1,46 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Globe, Smartphone, ShoppingCart, Code2, Palette, Zap } from 'lucide-react';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: Palette,
-      title: "Sites Portfolio",
-      description: "Créez votre vitrine professionnelle avec un design unique qui reflète votre personnalité et vos compétences.",
+      title: t('services.portfolio.title'),
+      description: t('services.portfolio.description'),
       features: ["Design sur mesure", "Responsive design", "SEO optimisé", "Portfolio interactif"]
     },
     {
       icon: Globe,
-      title: "Sites Web Dynamiques",
-      description: "Développement de sites web modernes avec des fonctionnalités avancées et une expérience utilisateur exceptionnelle.",
+      title: t('services.web.title'),
+      description: t('services.web.description'),
       features: ["CMS personnalisé", "Interface admin", "Base de données", "API intégrées"]
     },
     {
       icon: ShoppingCart,
-      title: "E-commerce",
-      description: "Solutions complètes de commerce électronique pour développer votre business en ligne efficacement.",
+      title: t('services.ecommerce.title'),
+      description: t('services.ecommerce.description'),
       features: ["Boutique en ligne", "Paiement sécurisé", "Gestion stocks", "Analytics avancées"]
     },
     {
       icon: Code2,
-      title: "Applications Web",
-      description: "Applications web complexes et performantes adaptées à vos besoins métier spécifiques.",
+      title: t('services.webapp.title'),
+      description: t('services.webapp.description'),
       features: ["SaaS développement", "Dashboard admin", "API REST", "Cloud deployment"]
     },
     {
       icon: Smartphone,
-      title: "Applications Mobile",
-      description: "Applications mobiles natives et hybrides pour iOS et Android avec une expérience utilisateur optimale.",
+      title: t('services.mobile.title'),
+      description: t('services.mobile.description'),
       features: ["iOS & Android", "UI/UX design", "Push notifications", "Store deployment"]
     },
     {
       icon: Zap,
-      title: "Web & Mobile",
-      description: "Solutions complètes combinant web et mobile pour une présence digitale totale et cohérente.",
+      title: t('services.fullstack.title'),
+      description: t('services.fullstack.description'),
       features: ["Écosystème complet", "Synchronisation", "Design uniforme", "Performance optimisée"]
     }
   ];
@@ -47,11 +50,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Nos Services
+            {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            De la conception à la mise en ligne, nous accompagnons votre projet digital 
-            avec expertise et passion pour créer des solutions qui dépassent vos attentes.
+            {t('services.subtitle')}
           </p>
         </div>
 
