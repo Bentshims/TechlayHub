@@ -2,8 +2,11 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Moon, Sun, Menu, X } from 'lucide-react';
+import LanguageSelector from './LanguageSelector';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,11 +30,14 @@ const Header = () => {
   };
 
   const navItems = [
-    { label: 'Accueil', href: '#home' },
-    { label: 'Services', href: '#services' },
-    { label: 'À propos', href: '#about' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Contact', href: '#contact' }
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.services'), href: '#services' },
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.portfolio'), href: '#portfolio' },
+    { label: t('nav.testimonials'), href: '#testimonials' },
+    { label: t('nav.faq'), href: '#faq' },
+    { label: t('nav.pricing'), href: '#pricing' },
+    { label: t('nav.contact'), href: '#contact' }
   ];
 
   return (
@@ -49,20 +55,22 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
               >
                 {item.label}
               </a>
             ))}
           </nav>
 
-          {/* Theme Toggle & Mobile Menu */}
-          <div className="flex items-center space-x-4">
+          {/* Controls */}
+          <div className="flex items-center space-x-3">
+            <LanguageSelector />
+            
             <Button
               variant="outline"
               size="icon"
@@ -80,7 +88,7 @@ const Header = () => {
             <Button
               variant="outline"
               size="icon"
-              className="md:hidden w-9 h-9"
+              className="lg:hidden w-9 h-9"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
@@ -94,7 +102,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+          <nav className="lg:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <a
