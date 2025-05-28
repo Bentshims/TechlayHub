@@ -45,6 +45,13 @@ const translations = {
     'nav.pricing': 'Tarifs',
     'nav.contact': 'Contact',
     
+    // Hero Section
+    'hero.title': 'Votre Vision,',
+    'hero.subtitle': 'Notre Code',
+    'hero.description': 'TECHLAY HUB transforme vos idées en solutions digitales innovantes. Spécialisés dans le développement web et mobile de haute qualité.',
+    'hero.cta.services': 'Découvrir nos services',
+    'hero.cta.portfolio': 'Voir notre portfolio',
+    
     // Testimonials
     'testimonials.title': 'Ce que disent nos clients',
     'testimonials.subtitle': 'Découvrez les retours de nos clients satisfaits',
@@ -72,6 +79,13 @@ const translations = {
     'nav.faq': 'FAQ',
     'nav.pricing': 'Pricing',
     'nav.contact': 'Contact',
+    
+    // Hero Section
+    'hero.title': 'Your Vision,',
+    'hero.subtitle': 'Our Code',
+    'hero.description': 'TECHLAY HUB transforms your ideas into innovative digital solutions. Specialized in high-quality web and mobile development.',
+    'hero.cta.services': 'Discover our services',
+    'hero.cta.portfolio': 'View our portfolio',
     
     // Testimonials
     'testimonials.title': 'What Our Clients Say',
@@ -101,6 +115,13 @@ const translations = {
     'nav.pricing': 'Preços',
     'nav.contact': 'Contato',
     
+    // Hero Section
+    'hero.title': 'Sua Visão,',
+    'hero.subtitle': 'Nosso Código',
+    'hero.description': 'TECHLAY HUB transforma suas ideias em soluções digitais inovadoras. Especializados em desenvolvimento web e mobile de alta qualidade.',
+    'hero.cta.services': 'Descobrir nossos serviços',
+    'hero.cta.portfolio': 'Ver nosso portfólio',
+    
     // Testimonials
     'testimonials.title': 'O Que Nossos Clientes Dizem',
     'testimonials.subtitle': 'Descubra o feedback de nossos clientes satisfeitos',
@@ -129,6 +150,13 @@ const translations = {
     'nav.pricing': 'Precios',
     'nav.contact': 'Contacto',
     
+    // Hero Section
+    'hero.title': 'Tu Visión,',
+    'hero.subtitle': 'Nuestro Código',
+    'hero.description': 'TECHLAY HUB transforma tus ideas en soluciones digitales innovadoras. Especializados en desarrollo web y móvil de alta calidad.',
+    'hero.cta.services': 'Descubrir nuestros servicios',
+    'hero.cta.portfolio': 'Ver nuestro portafolio',
+    
     // Testimonials
     'testimonials.title': 'Lo Que Dicen Nuestros Clientes',
     'testimonials.subtitle': 'Descubre los comentarios de nuestros clientes satisfechos',
@@ -156,6 +184,13 @@ const translations = {
     'nav.faq': '常见问题',
     'nav.pricing': '价格',
     'nav.contact': '联系我们',
+    
+    // Hero Section
+    'hero.title': '您的愿景，',
+    'hero.subtitle': '我们的代码',
+    'hero.description': 'TECHLAY HUB 将您的想法转化为创新的数字解决方案。专注于高质量的网络和移动开发。',
+    'hero.cta.services': '了解我们的服务',
+    'hero.cta.portfolio': '查看我们的作品集',
     
     // Testimonials
     'testimonials.title': '客户评价',

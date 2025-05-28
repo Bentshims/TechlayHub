@@ -1,5 +1,4 @@
 
-import { TranslationProvider } from '@/contexts/TranslationContext';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
@@ -13,20 +12,18 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <TranslationProvider>
-      <div className="min-h-screen">
-        <Header />
-        <HeroSection />
-        <ServicesSection />
-        <AboutSection />
-        <PortfolioSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <PricingSection />
-        <ContactSection />
-        <Footer />
-      </div>
-    </TranslationProvider>
+    <div className="min-h-screen">
+      <Header />
+      <HeroSection />
+      <ServicesSection />
+      <AboutSection />
+      <PortfolioSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <PricingSection />
+      <ContactSection />
+      <Footer />
+    </div>
   );
 };
 
