@@ -1,0 +1,195 @@
+
+import { useState } from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+
+const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Message envoyé !",
+      description: "Nous vous répondrons dans les plus brefs délais.",
+    });
+    setFormData({ name: '', email: '', subject: '', message: '' });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const contactInfo = [
+    {
+      icon: Mail,
+      title: "Email",
+      content: "contact@techlayhub.com",
+      link: "mailto:contact@techlayhub.com"
+    },
+    {
+      icon: Phone,
+      title: "Téléphone",
+      content: "+33 1 23 45 67 89",
+      link: "tel:+33123456789"
+    },
+    {
+      icon: MapPin,
+      title: "Adresse",
+      content: "Paris, France",
+      link: "#"
+    }
+  ];
+
+  return (
+    <section id="contact" className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Contactez-nous
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Prêt à donner vie à votre projet ? Discutons ensemble de vos besoins 
+            et découvrons comment nous pouvons vous aider à atteindre vos objectifs.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contact Info */}
+          <div className="space-y-8">
+            <h3 className="text-2xl font-bold mb-6">Restons en contact</h3>
+            {contactInfo.map((info, index) => (
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/50">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <info.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">{info.title}</h4>
+                      <a 
+                        href={info.link}
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {info.content}
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+            
+            <div className="mt-8">
+              <h4 className="font-semibold mb-4">Suivez-nous</h4>
+              <div className="flex space-x-4">
+                {['LinkedIn', 'Twitter', 'GitHub'].map((social) => (
+                  <a
+                    key={social}
+                    href="#"
+                    className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                  >
+                    {social.charAt(0)}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="lg:col-span-2">
+            <Card className="border-0 bg-card/50 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium mb-2">
+                        Nom complet
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        className="h-12"
+                        placeholder="Votre nom"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium mb-2">
+                        Email
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="h-12"
+                        placeholder="votre@email.com"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                      Sujet
+                    </label>
+                    <Input
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      required
+                      className="h-12"
+                      placeholder="Sujet de votre message"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2">
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows={6}
+                      placeholder="Décrivez votre projet ou posez vos questions..."
+                    />
+                  </div>
+                  
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 h-12"
+                  >
+                    <Send className="w-5 h-5 mr-2" />
+                    Envoyer le message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
