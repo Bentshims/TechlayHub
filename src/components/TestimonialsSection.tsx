@@ -8,23 +8,23 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Marie Dubois',
-      role: 'CEO, Fashion Boutique',
-      content: 'TECHLAY HUB a transformé notre présence en ligne. Notre site e-commerce est magnifique et performant.',
+      name: t('testimonials.client1.name'),
+      role: t('testimonials.client1.role'),
+      content: t('testimonials.client1.content'),
       rating: 5,
       avatar: '👩‍💼'
     },
     {
-      name: 'Pierre Martin',
-      role: 'Fondateur, StartupTech',
-      content: 'Une équipe professionnelle qui comprend nos besoins. Notre application mobile dépasse nos attentes.',
+      name: t('testimonials.client2.name'),
+      role: t('testimonials.client2.role'),
+      content: t('testimonials.client2.content'),
       rating: 5,
       avatar: '👨‍💻'
     },
     {
-      name: 'Sophie Lambert',
-      role: 'Directrice Marketing',
-      content: 'Un service client exceptionnel et des résultats à la hauteur. Je recommande vivement TECHLAY HUB.',
+      name: t('testimonials.client3.name'),
+      role: t('testimonials.client3.role'),
+      content: t('testimonials.client3.content'),
       rating: 5,
       avatar: '👩‍🎨'
     }

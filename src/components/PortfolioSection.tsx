@@ -9,49 +9,49 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      title: "E-commerce Fashion",
-      category: "E-commerce",
-      description: "Boutique en ligne moderne avec système de paiement intégré et gestion complète des commandes.",
+      title: t('portfolio.project1.title'),
+      category: t('portfolio.project1.category'),
+      description: t('portfolio.project1.description'),
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       tags: ["React", "Node.js", "Stripe", "MongoDB"],
       color: "from-blue-500 to-cyan-500"
     },
     {
-      title: "Portfolio Créatif",
-      category: "Portfolio",
-      description: "Site portfolio interactif pour un designer graphique avec animations fluides et galerie dynamique.",
+      title: t('portfolio.project2.title'),
+      category: t('portfolio.project2.category'),
+      description: t('portfolio.project2.description'),
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
       tags: ["React", "Framer Motion", "Tailwind", "TypeScript"],
       color: "from-purple-500 to-pink-500"
     },
     {
-      title: "App Mobile Banking",
-      category: "Mobile",
-      description: "Application mobile de banque en ligne avec sécurité renforcée et interface intuitive.",
+      title: t('portfolio.project3.title'),
+      category: t('portfolio.project3.category'),
+      description: t('portfolio.project3.description'),
       image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=600&h=400&fit=crop",
       tags: ["React Native", "Firebase", "Redux", "Biometric"],
       color: "from-emerald-500 to-teal-500"
     },
     {
-      title: "Dashboard Analytics",
-      category: "Web App",
-      description: "Tableau de bord analytique en temps réel pour entreprises avec visualisations avancées.",
+      title: t('portfolio.project4.title'),
+      category: t('portfolio.project4.category'),
+      description: t('portfolio.project4.description'),
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
       tags: ["Vue.js", "D3.js", "WebSocket", "PostgreSQL"],
       color: "from-orange-500 to-red-500"
     },
     {
-      title: "Plateforme E-learning",
-      category: "Web App",
-      description: "Plateforme d'apprentissage en ligne complète avec système de cours et suivi de progression.",
+      title: t('portfolio.project5.title'),
+      category: t('portfolio.project5.category'),
+      description: t('portfolio.project5.description'),
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
       tags: ["Next.js", "Prisma", "WebRTC", "AWS"],
       color: "from-indigo-500 to-purple-500"
     },
     {
-      title: "Site Corporate",
-      category: "Site Web",
-      description: "Site vitrine corporate multilingue avec système de gestion de contenu personnalisé.",
+      title: t('portfolio.project6.title'),
+      category: t('portfolio.project6.category'),
+      description: t('portfolio.project6.description'),
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
       tags: ["React", "Strapi", "i18n", "SEO"],
       color: "from-cyan-500 to-blue-500"

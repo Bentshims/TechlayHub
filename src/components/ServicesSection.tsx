@@ -11,37 +11,67 @@ const ServicesSection = () => {
       icon: Palette,
       title: t('services.portfolio.title'),
       description: t('services.portfolio.description'),
-      features: ["Design sur mesure", "Responsive design", "SEO optimisé", "Portfolio interactif"]
+      features: [
+        t('services.portfolio.feature1'),
+        t('services.portfolio.feature2'),
+        t('services.portfolio.feature3'),
+        t('services.portfolio.feature4')
+      ]
     },
     {
       icon: Globe,
       title: t('services.web.title'),
       description: t('services.web.description'),
-      features: ["CMS personnalisé", "Interface admin", "Base de données", "API intégrées"]
+      features: [
+        t('services.web.feature1'),
+        t('services.web.feature2'),
+        t('services.web.feature3'),
+        t('services.web.feature4')
+      ]
     },
     {
       icon: ShoppingCart,
       title: t('services.ecommerce.title'),
       description: t('services.ecommerce.description'),
-      features: ["Boutique en ligne", "Paiement sécurisé", "Gestion stocks", "Analytics avancées"]
+      features: [
+        t('services.ecommerce.feature1'),
+        t('services.ecommerce.feature2'),
+        t('services.ecommerce.feature3'),
+        t('services.ecommerce.feature4')
+      ]
     },
     {
       icon: Code2,
       title: t('services.webapp.title'),
       description: t('services.webapp.description'),
-      features: ["SaaS développement", "Dashboard admin", "API REST", "Cloud deployment"]
+      features: [
+        t('services.webapp.feature1'),
+        t('services.webapp.feature2'),
+        t('services.webapp.feature3'),
+        t('services.webapp.feature4')
+      ]
     },
     {
       icon: Smartphone,
       title: t('services.mobile.title'),
       description: t('services.mobile.description'),
-      features: ["iOS & Android", "UI/UX design", "Push notifications", "Store deployment"]
+      features: [
+        t('services.mobile.feature1'),
+        t('services.mobile.feature2'),
+        t('services.mobile.feature3'),
+        t('services.mobile.feature4')
+      ]
     },
     {
       icon: Zap,
       title: t('services.fullstack.title'),
       description: t('services.fullstack.description'),
-      features: ["Écosystème complet", "Synchronisation", "Design uniforme", "Performance optimisée"]
+      features: [
+        t('services.fullstack.feature1'),
+        t('services.fullstack.feature2'),
+        t('services.fullstack.feature3'),
+        t('services.fullstack.feature4')
+      ]
     }
   ];
 

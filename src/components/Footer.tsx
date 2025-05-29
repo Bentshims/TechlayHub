@@ -8,22 +8,22 @@ const Footer = () => {
 
   const links = {
     services: [
-      { label: 'Sites Portfolio', href: '#' },
-      { label: 'Sites Web Dynamiques', href: '#' },
-      { label: 'E-commerce', href: '#' },
-      { label: 'Applications Web', href: '#' }
+      { label: t('footer.portfolioLink'), href: '#' },
+      { label: t('footer.webLink'), href: '#' },
+      { label: t('footer.ecommerceLink'), href: '#' },
+      { label: t('footer.webappLink'), href: '#' }
     ],
     company: [
-      { label: 'À propos', href: '#about' },
-      { label: 'Portfolio', href: '#portfolio' },
-      { label: 'Contact', href: '#contact' },
-      { label: 'Blog', href: '#' }
+      { label: t('footer.aboutLink'), href: '#about' },
+      { label: t('footer.portfolioPageLink'), href: '#portfolio' },
+      { label: t('footer.contactLink'), href: '#contact' },
+      { label: t('footer.blogLink'), href: '#' }
     ],
     legal: [
-      { label: 'Mentions légales', href: '#' },
-      { label: 'Politique de confidentialité', href: '#' },
-      { label: 'CGV', href: '#' },
-      { label: 'CGU', href: '#' }
+      { label: t('footer.legalLink'), href: '#' },
+      { label: t('footer.privacyLink'), href: '#' },
+      { label: t('footer.termsLink'), href: '#' },
+      { label: t('footer.conditionsLink'), href: '#' }
     ]
   };
 
@@ -110,12 +110,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-muted-foreground text-sm">
               © {currentYear} TECHLAY HUB. {t('footer.copyright')}
-            </p>
-            <p className="text-muted-foreground text-sm">
-              {t('footer.madeWith')}
             </p>
           </div>
         </div>

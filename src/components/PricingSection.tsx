@@ -11,41 +11,41 @@ const PricingSection = () => {
     {
       name: t('pricing.starter'),
       price: '€999',
-      description: 'Parfait pour les petites entreprises',
+      description: t('pricing.starter.description'),
       features: [
-        'Site vitrine responsive',
-        'Jusqu\'à 5 pages',
-        'Optimisation SEO de base',
-        'Formulaire de contact',
-        'Support 3 mois'
+        t('pricing.starter.feature1'),
+        t('pricing.starter.feature2'),
+        t('pricing.starter.feature3'),
+        t('pricing.starter.feature4'),
+        t('pricing.starter.feature5')
       ],
       popular: false
     },
     {
       name: t('pricing.professional'),
       price: '€2499',
-      description: 'Idéal pour les entreprises en croissance',
+      description: t('pricing.professional.description'),
       features: [
-        'Site web dynamique',
-        'Jusqu\'à 15 pages',
-        'CMS intégré',
-        'Optimisation SEO avancée',
-        'Analytics intégrés',
-        'Support 6 mois'
+        t('pricing.professional.feature1'),
+        t('pricing.professional.feature2'),
+        t('pricing.professional.feature3'),
+        t('pricing.professional.feature4'),
+        t('pricing.professional.feature5'),
+        t('pricing.professional.feature6')
       ],
       popular: true
     },
     {
       name: t('pricing.enterprise'),
       price: 'Sur devis',
-      description: 'Solutions sur mesure',
+      description: t('pricing.enterprise.description'),
       features: [
-        'Application web complète',
-        'Pages illimitées',
-        'Fonctionnalités sur mesure',
-        'Intégrations API',
-        'Formation équipe',
-        'Support 12 mois'
+        t('pricing.enterprise.feature1'),
+        t('pricing.enterprise.feature2'),
+        t('pricing.enterprise.feature3'),
+        t('pricing.enterprise.feature4'),
+        t('pricing.enterprise.feature5'),
+        t('pricing.enterprise.feature6')
       ],
       popular: false
     }
