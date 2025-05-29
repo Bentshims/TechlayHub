@@ -38,19 +38,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: t('contact.info.email'),
-      content: "contact@techlayhub.com",
-      link: "mailto:contact@techlayhub.com"
+      content: "techlayhub@gmail.com",
+      link: "mailto:techlayhub@gmail.com"
     },
     {
       icon: Phone,
       title: t('contact.info.phone'),
-      content: "+33 1 23 45 67 89",
-      link: "tel:+33123456789"
+      content: "+243 97 13 79 450",
+      link: "tel:+243 97 13 79 450"
     },
     {
       icon: MapPin,
       title: t('contact.info.address'),
-      content: "Paris, France",
+      content: "Kinshasa, DRC",
       link: "#"
     }
   ];

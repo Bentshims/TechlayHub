@@ -42,7 +42,7 @@ const HeroSection = () => {
               {t('hero.cta.services')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-8 py-3 backdrop-blur-sm">
+            <Button size="lg" variant="outline" className="border-white text-blue-900 dark:text-white hover:bg-white hover:text-blue-900 dark:hover:bg-blue-500 font-semibold px-8 py-3 backdrop-blur-sm">
               {t('hero.cta.portfolio')}
             </Button>
           </div>
