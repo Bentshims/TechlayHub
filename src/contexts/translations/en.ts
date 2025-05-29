@@ -76,7 +76,7 @@ export const en: Translations = {
   'services.maintenance.feature4': 'Performance optimization',
   
   // Technologies Section
-  'technologies.title': 'Technologies Used',
+  'technologies.title': 'Stacks',
   'technologies.subtitle': 'We master the most advanced technologies to create robust and performant solutions.',
   'technologies.frontend': 'Frontend',
   'technologies.backend': 'Backend',
