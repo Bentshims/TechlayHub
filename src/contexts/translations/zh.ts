@@ -10,6 +10,7 @@ export const zh: Translations = {
   'nav.faq': '常见问题',
   'nav.pricing': '价格',
   'nav.contact': '联系我们',
+  'nav.technologies': '技术',
   
   // Hero Section
   'hero.title': '您的愿景，',

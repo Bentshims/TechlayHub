@@ -10,6 +10,7 @@ export const es: Translations = {
   'nav.faq': 'FAQ',
   'nav.pricing': 'Precios',
   'nav.contact': 'Contacto',
+  'nav.technologies': 'Tecnologías',
   
   // Hero Section
   'hero.title': 'Tu Visión,',

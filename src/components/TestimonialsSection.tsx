@@ -12,21 +12,21 @@ const TestimonialsSection = () => {
       role: t('testimonials.client1.role'),
       content: t('testimonials.client1.content'),
       rating: 5,
-      avatar: '👩‍💼'
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=64&h=64&fit=crop&crop=face'
     },
     {
       name: t('testimonials.client2.name'),
       role: t('testimonials.client2.role'),
       content: t('testimonials.client2.content'),
       rating: 5,
-      avatar: '👨‍💻'
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=64&h=64&fit=crop&crop=face'
     },
     {
       name: t('testimonials.client3.name'),
       role: t('testimonials.client3.role'),
       content: t('testimonials.client3.content'),
       rating: 5,
-      avatar: '👩‍🎨'
+      image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=64&h=64&fit=crop&crop=face'
     }
   ];
 
@@ -55,8 +55,15 @@ const TestimonialsSection = () => {
                   "{testimonial.content}"
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white text-xl mr-4">
-                    {testimonial.avatar}
+                  <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(testimonial.name)}&background=random&color=fff&size=48`;
+                      }}
+                    />
                   </div>
                   <div>
                     <h4 className="font-semibold">{testimonial.name}</h4>

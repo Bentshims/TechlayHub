@@ -44,21 +44,6 @@ const AboutSection = () => {
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               {t('about.description2')}
             </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <div className="bg-blue-100 dark:bg-blue-900/20 px-4 py-2 rounded-full">
-                <span className="text-blue-700 dark:text-blue-300 font-medium">React</span>
-              </div>
-              <div className="bg-purple-100 dark:bg-purple-900/20 px-4 py-2 rounded-full">
-                <span className="text-purple-700 dark:text-purple-300 font-medium">Node.js</span>
-              </div>
-              <div className="bg-cyan-100 dark:bg-cyan-900/20 px-4 py-2 rounded-full">
-                <span className="text-cyan-700 dark:text-cyan-300 font-medium">TypeScript</span>
-              </div>
-              <div className="bg-emerald-100 dark:bg-emerald-900/20 px-4 py-2 rounded-full">
-                <span className="text-emerald-700 dark:text-emerald-300 font-medium">MongoDB</span>
-              </div>
-            </div>
           </div>
 
           {/* Values Grid */}
