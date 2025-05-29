@@ -13,8 +13,8 @@ export const zh: Translations = {
   'nav.technologies': '技术',
   
   // Hero Section
-  'hero.title': '您的愿景，',
-  'hero.subtitle': '我们的代码',
+  "hero.title": "将您的挑战，",
+  "hero.subtitle": " 转化为数字机遇",
   'hero.description': 'TECHLAY HUB 将您的想法转化为创新的数字解决方案。专注于高质量的网络和移动开发。',
   'hero.cta.services': '了解我们的服务',
   'hero.cta.portfolio': '查看我们的作品集',
@@ -148,7 +148,7 @@ export const zh: Translations = {
   'faq.answer5': '我们的收费根据您的需求而异。请联系我们获取适合您项目的个性化免费报价。',
   
   // pricing
-  
+
   "pricing.title": "我们的价格",
   "pricing.subtitle": "适合各种预算的解决方案",
   "pricing.starter": "入门版",

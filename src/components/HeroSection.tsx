@@ -23,11 +23,11 @@ const HeroSection = () => {
         <Users className="w-14 h-14 text-white animate-float" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container pt-10 md:pt-auto  mx-auto px-4 relative z-10">
         <div className="text-center text-white max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-left md:text-center text-5xl md:text-7xl font-bold mb-6 w-[90%] animate-fade-in">
             {t('hero.title')}
-            <br />
+            {/* <br /> */}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               {t('hero.subtitle')}
             </span>

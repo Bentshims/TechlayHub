@@ -13,8 +13,8 @@ export const pt: Translations = {
   'nav.technologies': 'Tecnologias',
   
   // Hero Section
-  'hero.title': 'Sua Visão,',
-  'hero.subtitle': 'Nosso Código',
+  "hero.title": "Transforme seus desafios,",
+  "hero.subtitle": " em oportunidades digitais",
   'hero.description': 'TECHLAY HUB transforma suas ideias em soluções digitais inovadoras. Especializados em desenvolvimento web e mobile de alta qualidade.',
   'hero.cta.services': 'Descobrir nossos serviços',
   'hero.cta.portfolio': 'Ver nosso portfólio',

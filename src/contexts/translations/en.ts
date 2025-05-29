@@ -13,8 +13,8 @@ export const en: Translations = {
   'nav.technologies': 'Technologies',
   
   // Hero Section
-  'hero.title': 'Your Vision,',
-  'hero.subtitle': 'Our Code',
+  "hero.title": "Turn your challenges,",
+  "hero.subtitle": " into digital opportunities",
   'hero.description': 'TECHLAY HUB transforms your ideas into innovative digital solutions. Specialized in high-quality web and mobile development.',
   'hero.cta.services': 'Discover our services',
   'hero.cta.portfolio': 'View our portfolio',
@@ -149,7 +149,7 @@ export const en: Translations = {
   'faq.answer5': 'Our rates vary according to your needs. Contact us for a personalized and free quote adapted to your project.',
   
   //pricing
-  
+
   "pricing.title": "Our Pricing",
   "pricing.subtitle": "Solutions for every budget",
   "pricing.starter": "Starter",
