@@ -13,7 +13,7 @@ export const en: Translations = {
   'nav.technologies': 'Technologies',
   
   // Hero Section
-  "hero.title": "Turn your challenges,",
+  "hero.title": "Turn your challenges",
   "hero.subtitle": " into digital opportunities",
   'hero.description': 'TECHLAY HUB transforms your ideas into innovative digital solutions. Specialized in high-quality web and mobile development.',
   'hero.cta.services': 'Discover our services',

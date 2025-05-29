@@ -67,7 +67,7 @@ const Header = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">TH</span>
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-base md:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               TECHLAY HUB
             </span>
           </div>
@@ -113,9 +113,9 @@ const Header = () => {
                   <Menu className="h-4 w-4" />
                 </Button>
               </DrawerTrigger>
-              <DrawerContent className="h-full w-80 mt-0 rounded-none">
+              <DrawerContent className="h-full w-[50%] md:w-[40%] mt-0 rounded-none">
                 <DrawerHeader className="text-left">
-                  <DrawerTitle className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  <DrawerTitle className="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     TECHLAY HUB
                   </DrawerTitle>
                 </DrawerHeader>

@@ -14,7 +14,7 @@ export const fr: Translations = {
   'nav.technologies': 'Technologies',
   
   // Hero Section
-  'hero.title': 'Transformez vos défis en,',
+  'hero.title': 'Transformez vos défis en',
   'hero.subtitle': ' opportunités digitales',
   'hero.description': 'TECHLAY HUB transforme vos idées en solutions digitales innovantes. Spécialisés dans le développement web et mobile de haute qualité.',
   'hero.cta.services': 'Découvrir nos services',

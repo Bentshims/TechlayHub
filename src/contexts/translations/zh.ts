@@ -13,7 +13,7 @@ export const zh: Translations = {
   'nav.technologies': '技术',
   
   // Hero Section
-  "hero.title": "将您的挑战，",
+  "hero.title": "将您的挑战",
   "hero.subtitle": " 转化为数字机遇",
   'hero.description': 'TECHLAY HUB 将您的想法转化为创新的数字解决方案。专注于高质量的网络和移动开发。',
   'hero.cta.services': '了解我们的服务',
