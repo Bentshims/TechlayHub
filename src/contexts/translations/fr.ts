@@ -25,15 +25,15 @@ export const fr: Translations = {
   
   // Services Section
   'services.title': 'Nos Services',
-  'services.subtitle': 'De la conception à la mise en ligne, nous accompagnons votre projet digital avec expertise et passion pour créer des solutions qui dépassent vos attentes.',
+  'services.subtitle': 'De la conception au déploiement, nous accompagnons votre projet digital avec expertise et passion pour créer des solutions qui dépassent vos attentes.',
   'services.portfolio.title': 'Sites Portfolio',
   'services.portfolio.description': 'Créez votre vitrine professionnelle avec un design unique qui reflète votre personnalité et vos compétences.',
-  'services.web.title': 'Sites Web Dynamiques',
+  'services.web.title': 'Sites Dynamiques',
   'services.web.description': 'Développement de sites web modernes avec des fonctionnalités avancées et une expérience utilisateur exceptionnelle.',
   'services.ecommerce.title': 'E-commerce',
-  'services.ecommerce.description': 'Solutions complètes de commerce électronique pour développer votre business en ligne efficacement.',
+  'services.ecommerce.description': 'Solutions e-commerce complètes pour développer votre activité en ligne efficacement.',
   'services.webapp.title': 'Applications Web',
-  'services.webapp.description': 'Applications web complexes et performantes adaptées à vos besoins métier spécifiques.',
+  'services.webapp.description': 'Applications web complexes et performantes adaptées à vos besoins métiers spécifiques.',
   'services.mobile.title': 'Applications Mobile',
   'services.mobile.description': 'Applications mobiles natives et hybrides pour iOS et Android avec une expérience utilisateur optimale.',
   'services.fullstack.title': 'Web & Mobile',
@@ -41,14 +41,14 @@ export const fr: Translations = {
   
   // About Section
   'about.title': 'À propos de TECHLAY HUB',
-  'about.description1': 'Fondée avec la vision de démocratiser l\'accès aux technologies web de pointe, TECHLAY HUB est votre partenaire de confiance pour tous vos projets digitaux. Nous combinons créativité, expertise technique et approche client-centrique pour créer des expériences digitales exceptionnelles.',
+  'about.description1': 'Fondée avec la vision de démocratiser l\'accès aux technologies web de pointe, TECHLAY HUB est votre partenaire de confiance pour tous vos projets digitaux. Nous combinons créativité, expertise technique et approche centrée client pour créer des expériences digitales exceptionnelles.',
   'about.description2': 'Notre approche collaborative nous permet de comprendre parfaitement vos besoins et de vous accompagner à chaque étape de votre transformation digitale. De la conception à la maintenance, nous sommes là pour faire de votre vision une réalité.',
   'about.mission.title': 'Mission',
-  'about.mission.description': 'Transformer les idées en solutions digitales innovantes qui propulsent votre business vers le succès.',
+  'about.mission.description': 'Transformer les idées en solutions digitales innovantes qui propulsent votre entreprise vers le succès.',
   'about.team.title': 'Équipe',
-  'about.team.description': 'Une équipe passionnée de développeurs et designers experts dans les dernières technologies web.',
+  'about.team.description': 'Une équipe passionnée de développeurs et designers experts des dernières technologies web.',
   'about.innovation.title': 'Innovation',
-  'about.innovation.description': 'Nous restons à la pointe des technologies pour vous offrir des solutions modernes et performantes.',
+  'about.innovation.description': 'Nous restons à la pointe de la technologie pour vous offrir des solutions modernes et performantes.',
   'about.quality.title': 'Qualité',
   'about.quality.description': 'Chaque projet est traité avec le plus grand soin pour garantir un résultat à la hauteur de vos attentes.',
   
@@ -64,8 +64,18 @@ export const fr: Translations = {
   'testimonials.subtitle': 'Découvrez les retours de nos clients satisfaits',
   
   // FAQ
-  'faq.title': 'Questions Fréquemment Posées',
+  'faq.title': 'Questions Fréquentes',
   'faq.subtitle': 'Trouvez les réponses à vos questions',
+  'faq.question1': 'Combien de temps faut-il pour développer un site web ?',
+  'faq.answer1': 'Le délai varie selon la complexité du projet. Un site vitrine simple prend 2-3 semaines, tandis qu\'un site e-commerce complet peut prendre 6-8 semaines.',
+  'faq.question2': 'Proposez-vous la maintenance après livraison ?',
+  'faq.answer2': 'Oui, nous proposons des contrats de maintenance pour assurer la sécurité, les mises à jour et le bon fonctionnement de votre site.',
+  'faq.question3': 'Mes sites seront-ils optimisés pour mobile ?',
+  'faq.answer3': 'Absolument ! Tous nos sites sont développés avec une approche "mobile-first" et sont entièrement responsives.',
+  'faq.question4': 'Puis-je modifier mon site moi-même après livraison ?',
+  'faq.answer4': 'Nous intégrons des CMS intuitifs qui vous permettent de modifier facilement le contenu. Nous vous formons également à leur utilisation.',
+  'faq.question5': 'Quels sont vos tarifs ?',
+  'faq.answer5': 'Nos tarifs varient selon vos besoins. Contactez-nous pour un devis personnalisé et gratuit adapté à votre projet.',
   
   // Pricing
   'pricing.title': 'Nos Tarifs',

@@ -66,6 +66,16 @@ export const zh: Translations = {
   // FAQ
   'faq.title': '常见问题',
   'faq.subtitle': '找到您问题的答案',
+  'faq.question1': '开发一个网站需要多长时间？',
+  'faq.answer1': '时间根据项目复杂性而异。简单的展示网站需要2-3周，而完整的电子商务网站可能需要6-8周。',
+  'faq.question2': '交付后提供维护服务吗？',
+  'faq.answer2': '是的，我们提供维护合同以确保您网站的安全、更新和正常运行。',
+  'faq.question3': '我的网站会针对移动设备优化吗？',
+  'faq.answer3': '绝对！我们所有的网站都采用"移动优先"的方法开发，并且完全响应式。',
+  'faq.question4': '交付后我可以自己修改网站吗？',
+  'faq.answer4': '我们集成直观的CMS，让您可以轻松修改内容。我们也会培训您如何使用。',
+  'faq.question5': '你们的收费标准是什么？',
+  'faq.answer5': '我们的收费根据您的需求而异。请联系我们获取适合您项目的个性化免费报价。',
   
   // Pricing
   'pricing.title': '我们的价格',

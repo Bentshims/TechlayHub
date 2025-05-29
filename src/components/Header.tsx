@@ -1,14 +1,21 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Moon, Sun, Menu } from 'lucide-react';
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from '@/contexts/TranslationContext';
 
 const Header = () => {
   const { t } = useTranslation();
   const [isDark, setIsDark] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
     const theme = localStorage.getItem('theme');
@@ -39,6 +46,17 @@ const Header = () => {
     { label: t('nav.pricing'), href: '#pricing' },
     { label: t('nav.contact'), href: '#contact' }
   ];
+
+  const handleNavClick = (href: string) => {
+    setIsDrawerOpen(false);
+    // Small delay to allow drawer to close before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -84,39 +102,38 @@ const Header = () => {
               )}
             </Button>
 
-            {/* Mobile Menu Button */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="lg:hidden w-9 h-9"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? (
-                <X className="h-4 w-4" />
-              ) : (
-                <Menu className="h-4 w-4" />
-              )}
-            </Button>
+            {/* Mobile Menu Drawer */}
+            <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction="left">
+              <DrawerTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="lg:hidden w-9 h-9"
+                >
+                  <Menu className="h-4 w-4" />
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent className="h-full w-80 mt-0 rounded-none">
+                <DrawerHeader className="text-left">
+                  <DrawerTitle className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    TECHLAY HUB
+                  </DrawerTitle>
+                </DrawerHeader>
+                <nav className="flex flex-col space-y-1 px-6 pb-6">
+                  {navItems.map((item) => (
+                    <button
+                      key={item.label}
+                      onClick={() => handleNavClick(item.href)}
+                      className="text-left text-foreground hover:text-primary hover:bg-muted/50 transition-colors duration-200 font-medium py-3 px-4 rounded-md"
+                    >
+                      {item.label}
+                    </button>
+                  ))}
+                </nav>
+              </DrawerContent>
+            </Drawer>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="lg:hidden mt-4 pb-4 border-t border-border pt-4">
-            <div className="flex flex-col space-y-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </div>
-          </nav>
-        )}
       </div>
     </header>
   );

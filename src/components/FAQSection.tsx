@@ -10,24 +10,24 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: 'Combien de temps faut-il pour développer un site web ?',
-      answer: 'Le délai varie selon la complexité du projet. Un site vitrine simple prend 2-3 semaines, tandis qu\'un site e-commerce complet peut prendre 6-8 semaines.'
+      question: t('faq.question1'),
+      answer: t('faq.answer1')
     },
     {
-      question: 'Proposez-vous la maintenance après livraison ?',
-      answer: 'Oui, nous proposons des contrats de maintenance pour assurer la sécurité, les mises à jour et le bon fonctionnement de votre site.'
+      question: t('faq.question2'),
+      answer: t('faq.answer2')
     },
     {
-      question: 'Mes sites seront-ils optimisés pour mobile ?',
-      answer: 'Absolument ! Tous nos sites sont développés avec une approche "mobile-first" et sont entièrement responsives.'
+      question: t('faq.question3'),
+      answer: t('faq.answer3')
     },
     {
-      question: 'Puis-je modifier mon site moi-même après livraison ?',
-      answer: 'Nous intégrons des CMS intuitifs qui vous permettent de modifier facilement le contenu. Nous vous formons également à leur utilisation.'
+      question: t('faq.question4'),
+      answer: t('faq.answer4')
     },
     {
-      question: 'Quels sont vos tarifs ?',
-      answer: 'Nos tarifs varient selon vos besoins. Contactez-nous pour un devis personnalisé et gratuit adapté à votre projet.'
+      question: t('faq.question5'),
+      answer: t('faq.answer5')
     }
   ];
 

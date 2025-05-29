@@ -66,6 +66,16 @@ export const pt: Translations = {
   // FAQ
   'faq.title': 'Perguntas Frequentes',
   'faq.subtitle': 'Encontre respostas para suas perguntas',
+  'faq.question1': 'Quanto tempo leva para desenvolver um site?',
+  'faq.answer1': 'O prazo varia conforme a complexidade do projeto. Um site vitrine simples leva 2-3 semanas, enquanto um site de e-commerce completo pode levar 6-8 semanas.',
+  'faq.question2': 'Vocês oferecem manutenção após a entrega?',
+  'faq.answer2': 'Sim, oferecemos contratos de manutenção para garantir segurança, atualizações e bom funcionamento do seu site.',
+  'faq.question3': 'Meus sites serão otimizados para mobile?',
+  'faq.answer3': 'Absolutamente! Todos os nossos sites são desenvolvidos com abordagem "mobile-first" e são totalmente responsivos.',
+  'faq.question4': 'Posso modificar meu site sozinho após a entrega?',
+  'faq.answer4': 'Integramos CMS intuitivos que permitem modificar facilmente o conteúdo. Também oferecemos treinamento sobre o uso.',
+  'faq.question5': 'Quais são suas tarifas?',
+  'faq.answer5': 'Nossas tarifas variam conforme suas necessidades. Entre em contato para um orçamento personalizado e gratuito adaptado ao seu projeto.',
   
   // Pricing
   'pricing.title': 'Nossos Preços',

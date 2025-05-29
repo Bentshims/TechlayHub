@@ -66,6 +66,16 @@ export const en: Translations = {
   // FAQ
   'faq.title': 'Frequently Asked Questions',
   'faq.subtitle': 'Find answers to your questions',
+  'faq.question1': 'How long does it take to develop a website?',
+  'faq.answer1': 'The timeframe varies according to project complexity. A simple showcase site takes 2-3 weeks, while a complete e-commerce site can take 6-8 weeks.',
+  'faq.question2': 'Do you offer maintenance after delivery?',
+  'faq.answer2': 'Yes, we offer maintenance contracts to ensure security, updates and proper functioning of your site.',
+  'faq.question3': 'Will my sites be optimized for mobile?',
+  'faq.answer3': 'Absolutely! All our sites are developed with a "mobile-first" approach and are fully responsive.',
+  'faq.question4': 'Can I modify my site myself after delivery?',
+  'faq.answer4': 'We integrate intuitive CMS that allow you to easily modify content. We also train you on their use.',
+  'faq.question5': 'What are your rates?',
+  'faq.answer5': 'Our rates vary according to your needs. Contact us for a personalized and free quote adapted to your project.',
   
   // Pricing
   'pricing.title': 'Our Pricing',
