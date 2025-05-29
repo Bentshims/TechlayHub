@@ -37,7 +37,7 @@ const PricingSection = () => {
     },
     {
       name: t('pricing.enterprise'),
-      price: 'Sur devis',
+      price: t('pricing.enterprise.price'),
       description: t('pricing.enterprise.description'),
       features: [
         t('pricing.enterprise.feature1'),
@@ -99,7 +99,7 @@ const PricingSection = () => {
                   className="w-full" 
                   variant={plan.popular ? "default" : "outline"}
                 >
-                  {plan.price === 'Sur devis' ? t('pricing.contact') : t('pricing.getStarted')}
+                  {plan.price === t('pricing.enterprise.price') ? t('pricing.contact') : t('pricing.getStarted')}
                 </Button>
               </CardContent>
             </Card>

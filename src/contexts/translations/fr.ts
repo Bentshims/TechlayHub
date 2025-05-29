@@ -151,6 +151,7 @@ export const fr: Translations = {
   'pricing.professional.feature5': 'Analytics intégrés',
   'pricing.professional.feature6': 'Support 6 mois',
   'pricing.enterprise.description': 'Solutions sur mesure',
+  'pricing.enterprise.price': 'Sur devis',
   'pricing.enterprise.feature1': 'Application web complète',
   'pricing.enterprise.feature2': 'Pages illimitées',
   'pricing.enterprise.feature3': 'Fonctionnalités sur mesure',
