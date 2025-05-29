@@ -13,7 +13,7 @@ const PortfolioSection = () => {
       category: t('portfolio.project1.category'),
       description: t('portfolio.project1.description'),
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tags: ["React", "Node.js", "Stripe", "MongoDB"],
+      tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
       color: "from-blue-500 to-cyan-500"
     },
     {
@@ -21,7 +21,7 @@ const PortfolioSection = () => {
       category: t('portfolio.project2.category'),
       description: t('portfolio.project2.description'),
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      tags: ["React", "Framer Motion", "Tailwind", "TypeScript"],
+      tags: ["React", "TypeScript", "Tailwind CSS", "JavaScript"],
       color: "from-purple-500 to-pink-500"
     },
     {
@@ -29,7 +29,7 @@ const PortfolioSection = () => {
       category: t('portfolio.project3.category'),
       description: t('portfolio.project3.description'),
       image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=600&h=400&fit=crop",
-      tags: ["React Native", "Firebase", "Redux", "Biometric"],
+      tags: ["React", "TypeScript", "Node.js", "PostgreSQL"],
       color: "from-emerald-500 to-teal-500"
     },
     {
@@ -37,7 +37,7 @@ const PortfolioSection = () => {
       category: t('portfolio.project4.category'),
       description: t('portfolio.project4.description'),
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tags: ["Vue.js", "D3.js", "WebSocket", "PostgreSQL"],
+      tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Python"],
       color: "from-orange-500 to-red-500"
     },
     {
@@ -45,7 +45,7 @@ const PortfolioSection = () => {
       category: t('portfolio.project5.category'),
       description: t('portfolio.project5.description'),
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-      tags: ["Next.js", "Prisma", "WebRTC", "AWS"],
+      tags: ["React", "TypeScript", "AdonisJS", "PostgreSQL", "Tailwind CSS"],
       color: "from-indigo-500 to-purple-500"
     },
     {
@@ -53,7 +53,7 @@ const PortfolioSection = () => {
       category: t('portfolio.project6.category'),
       description: t('portfolio.project6.description'),
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      tags: ["React", "Strapi", "i18n", "SEO"],
+      tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
       color: "from-cyan-500 to-blue-500"
     }
   ];
@@ -113,7 +113,7 @@ const PortfolioSection = () => {
                   {project.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
-                      className="text-xs bg-muted px-2 py-1 rounded-md text-muted-foreground"
+                      className="text-xs bg-muted px-2 py-1 rounded-md text-muted-foreground font-medium"
                     >
                       {tag}
                     </span>

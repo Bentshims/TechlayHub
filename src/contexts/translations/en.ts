@@ -10,6 +10,7 @@ export const en: Translations = {
   'nav.faq': 'FAQ',
   'nav.pricing': 'Pricing',
   'nav.contact': 'Contact',
+  'nav.technologies': 'Technologies',
   
   // Hero Section
   'hero.title': 'Your Vision,',
@@ -61,6 +62,26 @@ export const en: Translations = {
   'services.fullstack.feature2': 'Synchronization',
   'services.fullstack.feature3': 'Uniform design',
   'services.fullstack.feature4': 'Optimized performance',
+  'services.ai.title': 'Custom AI Agents',
+  'services.ai.description': 'Development of custom AI agents to automate your business processes and improve your productivity.',
+  'services.ai.feature1': 'Conversational agents',
+  'services.ai.feature2': 'Business automation',
+  'services.ai.feature3': 'Intelligent analysis',
+  'services.ai.feature4': 'API integration',
+  'services.maintenance.title': 'Maintenance & Support',
+  'services.maintenance.description': 'Continuous maintenance services, security updates and technical support for your applications.',
+  'services.maintenance.feature1': 'Preventive maintenance',
+  'services.maintenance.feature2': 'Security updates',
+  'services.maintenance.feature3': '24/7 support',
+  'services.maintenance.feature4': 'Performance optimization',
+  
+  // Technologies Section
+  'technologies.title': 'Technologies Used',
+  'technologies.subtitle': 'We master the most advanced technologies to create robust and performant solutions.',
+  'technologies.frontend': 'Frontend',
+  'technologies.backend': 'Backend',
+  'technologies.database': 'Database',
+  'technologies.ai': 'Artificial Intelligence',
   
   // About Section
   'about.title': 'About TECHLAY HUB',

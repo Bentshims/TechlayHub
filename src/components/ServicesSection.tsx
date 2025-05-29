@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Globe, Smartphone, ShoppingCart, Code2, Palette, Zap } from 'lucide-react';
+import { Globe, Smartphone, ShoppingCart, Code2, Palette, Zap, Bot, Wrench } from 'lucide-react';
 import { useTranslation } from '@/contexts/TranslationContext';
 
 const ServicesSection = () => {
@@ -72,6 +72,28 @@ const ServicesSection = () => {
         t('services.fullstack.feature3'),
         t('services.fullstack.feature4')
       ]
+    },
+    {
+      icon: Bot,
+      title: t('services.ai.title'),
+      description: t('services.ai.description'),
+      features: [
+        t('services.ai.feature1'),
+        t('services.ai.feature2'),
+        t('services.ai.feature3'),
+        t('services.ai.feature4')
+      ]
+    },
+    {
+      icon: Wrench,
+      title: t('services.maintenance.title'),
+      description: t('services.maintenance.description'),
+      features: [
+        t('services.maintenance.feature1'),
+        t('services.maintenance.feature2'),
+        t('services.maintenance.feature3'),
+        t('services.maintenance.feature4')
+      ]
     }
   ];
 
@@ -87,7 +109,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card 
               key={index} 
@@ -98,17 +120,17 @@ const ServicesSection = () => {
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
                   {service.description}
                 </p>
                 
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm">
+                    <li key={featureIndex} className="flex items-center text-xs">
                       <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mr-3"></div>
                       {feature}
                     </li>
