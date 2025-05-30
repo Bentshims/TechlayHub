@@ -50,7 +50,7 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-blue-300">50+</div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-300">10+</div>
               <div className="text-blue-100">{t('hero.stats.projects')}</div>
             </div>
             <div className="text-center">
@@ -62,7 +62,7 @@ const HeroSection = () => {
               <div className="text-blue-100">{t('hero.stats.support')}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-emerald-300">3+</div>
+              <div className="text-3xl md:text-4xl font-bold text-emerald-300">3-</div>
               <div className="text-blue-100">{t('hero.stats.experience')}</div>
             </div>
           </div>

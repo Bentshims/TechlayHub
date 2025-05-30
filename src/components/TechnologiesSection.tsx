@@ -80,7 +80,7 @@ const TechnologiesSection = () => {
 
   return (
     <section id="technologies" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 lg:flex flex-col items-center">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             {t('technologies.title')}
@@ -90,7 +90,7 @@ const TechnologiesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:w-[80%]">
           {technologies.map((category, categoryIndex) => (
             <Card key={categoryIndex} className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
