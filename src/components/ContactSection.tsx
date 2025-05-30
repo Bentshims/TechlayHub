@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from '@/contexts/TranslationContext';
+import emailjs from 'emailjs-com';
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -20,13 +21,39 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: t('contact.form.success.title'),
-      description: t('contact.form.success.description'),
-    });
-    setFormData({ name: '', email: '', subject: '', message: '' });
+  
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      time: new Date().toLocaleString(),
+    };
+  
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        toast({
+          title: t('contact.form.success.title'),
+          description: t('contact.form.success.description'),
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      })
+      .catch((error) => {
+        toast({
+          title: t('contact.form.error.title'),
+          description: t('contact.form.error.description'),
+          variant: 'destructive',
+        });
+        console.error('EmailJS error:', error);
+      });
   };
-
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -50,7 +77,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: t('contact.info.address'),
-      content: "Kinshasa, DRC",
+      content: "Lubumbashi, DRC",
       link: "#"
     }
   ];
@@ -92,7 +119,7 @@ const ContactSection = () => {
               </Card>
             ))}
             
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="font-semibold mb-4">{t('contact.info.follow')}</h4>
               <div className="flex space-x-4">
                 {['LinkedIn', 'Twitter', 'GitHub'].map((social) => (
@@ -105,7 +132,7 @@ const ContactSection = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

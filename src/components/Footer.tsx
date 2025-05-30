@@ -44,7 +44,7 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {['LinkedIn', 'Twitter', 'GitHub', 'Instagram'].map((social) => (
                 <a
                   key={social}
@@ -54,7 +54,7 @@ const Footer = () => {
                   {social.charAt(0)}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
