@@ -73,17 +73,17 @@ const ServicesSection = () => {
         t('services.fullstack.feature4')
       ]
     },
-    {
-      icon: Bot,
-      title: t('services.ai.title'),
-      description: t('services.ai.description'),
-      features: [
-        t('services.ai.feature1'),
-        t('services.ai.feature2'),
-        t('services.ai.feature3'),
-        t('services.ai.feature4')
-      ]
-    },
+    // {
+    //   icon: Bot,
+    //   title: t('services.ai.title'),
+    //   description: t('services.ai.description'),
+    //   features: [
+    //     t('services.ai.feature1'),
+    //     t('services.ai.feature2'),
+    //     t('services.ai.feature3'),
+    //     t('services.ai.feature4')
+    //   ]
+    // },
     {
       icon: Wrench,
       title: t('services.maintenance.title'),

@@ -7,7 +7,7 @@ const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       {/* Background gradient */}
       <div className="absolute inset-0 hero-gradient"></div>
       <div className="absolute inset-0 bg-black/20"></div>

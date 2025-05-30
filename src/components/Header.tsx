@@ -113,7 +113,7 @@ const Header = () => {
                   <Menu className="h-4 w-4" />
                 </Button>
               </DrawerTrigger>
-              <DrawerContent className="h-full w-[50%] md:w-[40%] mt-0 rounded-none">
+              <DrawerContent className="h-full w-[60%] md:w-[40%] mt-0 rounded-none">
                 <DrawerHeader className="text-left">
                   <DrawerTitle className="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     TECHLAY HUB
