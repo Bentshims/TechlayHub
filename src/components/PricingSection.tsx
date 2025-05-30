@@ -95,12 +95,14 @@ const PricingSection = () => {
                   ))}
                 </ul>
                 
-                <Button 
-                  className="w-full" 
-                  variant={plan.popular ? "default" : "outline"}
-                >
-                  {plan.price === t('pricing.enterprise.price') ? t('pricing.contact') : t('pricing.getStarted')}
-                </Button>
+                <a href="#contact">
+                  <Button 
+                    className="w-full" 
+                    variant={plan.popular ? "default" : "outline"}
+                  >
+                    {plan.price === t('pricing.enterprise.price') ? t('pricing.contact') : t('pricing.getStarted')}
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}

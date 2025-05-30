@@ -38,13 +38,17 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-8 py-3">
-              {t('hero.cta.services')}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-blue-900 dark:text-white hover:bg-white hover:text-blue-900 dark:hover:bg-blue-500 font-semibold px-8 py-3 backdrop-blur-sm">
-              {t('hero.cta.portfolio')}
-            </Button>
+            <a href="#services">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-8 py-3">
+                  {t('hero.cta.services')}
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+            </a>
+            <a href="#portfolio">
+              <Button size="lg" variant="outline" className="border-white text-blue-900 dark:text-white hover:bg-white hover:text-blue-900 dark:hover:bg-blue-500 font-semibold px-8 py-3 backdrop-blur-sm">
+                {t('hero.cta.portfolio')}
+              </Button>
+            </a>
           </div>
 
           {/* Stats */}
