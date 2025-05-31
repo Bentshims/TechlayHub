@@ -144,8 +144,8 @@ export const fr: Translations = {
   'faq.answer2': 'Oui, nous proposons des contrats de maintenance pour assurer la sécurité, les mises à jour et le bon fonctionnement de votre site.',
   'faq.question3': 'Mes sites seront-ils optimisés pour mobile ?',
   'faq.answer3': 'Absolument ! Tous nos sites sont développés avec une approche "mobile-first" et sont entièrement responsive.',
-  'faq.question4': 'Puis-je modifier mon site moi-même après livraison ?',
-  'faq.answer4': 'Nous intégrons des CMS intuitifs qui vous permettent de modifier facilement le contenu. Nous vous formons également à leur utilisation.',
+  'faq.question4': 'Le site sera-t-il bien référencé sur Google ?',
+  'faq.answer4': 'Oui. Nous appliquons les bonnes pratiques du SEO (référencement naturel) dès la conception de votre site pour qu’il soit bien visible sur Google.',
   'faq.question5': 'Quels sont vos tarifs ?',
   'faq.answer5': 'Nos tarifs varient selon vos besoins. Contactez-nous pour un devis personnalisé et gratuit adapté à votre projet.',
   

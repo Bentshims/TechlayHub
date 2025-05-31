@@ -142,8 +142,9 @@ export const es: Translations = {
   'faq.answer2': 'Sí, ofrecemos contratos de mantenimiento para asegurar la seguridad, actualizaciones y buen funcionamiento de tu sitio.',
   'faq.question3': '¿Mis sitios estarán optimizados para móvil?',
   'faq.answer3': '¡Absolutamente! Todos nuestros sitios se desarrollan con enfoque "mobile-first" y son completamente responsivos.',
-  'faq.question4': '¿Puedo modificar mi sitio yo mismo después de la entrega?',
-  'faq.answer4': 'Integramos CMS intuitivos que te permiten modificar fácilmente el contenido. También te capacitamos en su uso.',
+  'faq.question4': '¿El sitio web estará bien posicionado en Google?',
+  'faq.answer4': 'Sí. Aplicamos las mejores prácticas de SEO desde el diseño para que tu sitio sea fácilmente visible en Google.',
+
   'faq.question5': '¿Cuáles son sus tarifas?',
   'faq.answer5': 'Nuestras tarifas varían según tus necesidades. Contáctanos para una cotización personalizada y gratuita adaptada a tu proyecto.',
   
