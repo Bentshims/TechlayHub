@@ -79,8 +79,8 @@ const PortfolioSection = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-0 group-hover:opacity-80 transition-opacity duration-300`}></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-0 group-hover:opacity-80 transition-opacity duration-300`}></div> */}
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex space-x-4">
                     <Button size="sm" className="bg-white text-gray-900 hover:bg-gray-100">
                       <ExternalLink className="w-4 h-4 mr-2" />
@@ -91,7 +91,7 @@ const PortfolioSection = () => {
                       {t('portfolio.code')}
                     </Button>
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <CardContent className="p-6">
@@ -123,12 +123,12 @@ const PortfolioSection = () => {
             </Card>
           ))}
         </div>
-
+{/* 
         <div className="text-center mt-12">
           <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
             {t('portfolio.viewAll')}
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
