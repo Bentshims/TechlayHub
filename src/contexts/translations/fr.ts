@@ -139,7 +139,7 @@ export const fr: Translations = {
   'faq.title': 'Questions Fréquentes',
   'faq.subtitle': 'Trouvez les réponses à vos questions',
   'faq.question1': 'Combien de temps faut-il pour développer un site web ?',
-  'faq.answer1': 'Le délai varie selon la complexité du projet. Un site vitrine simple prend 2-3 semaines, tandis qu\'un site e-commerce complet peut prendre 6-8 semaines.',
+  'faq.answer1': 'Le délai varie selon la complexité du projet. Un site vitrine simple prend 1-2 semaines, tandis qu\'un site e-commerce complet peut prendre 4-8 semaines.',
   'faq.question2': 'Proposez-vous de la maintenance après livraison ?',
   'faq.answer2': 'Oui, nous proposons des contrats de maintenance pour assurer la sécurité, les mises à jour et le bon fonctionnement de votre site.',
   'faq.question3': 'Mes sites seront-ils optimisés pour mobile ?',

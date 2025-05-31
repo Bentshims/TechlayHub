@@ -38,17 +38,21 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <fieldset className='w-full md:w-auto'>
             <a href="#services">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-8 py-3">
+              <Button size="lg" className="w-full bg-white text-blue-900 hover:bg-blue-300 font-semibold px-8 py-3">
                   {t('hero.cta.services')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
             </a>
+            </fieldset>
+            <fieldset className=' w-full md:w-auto'>
             <a href="#portfolio">
-              <Button size="lg" variant="outline" className="border-white text-blue-900 dark:text-white hover:bg-white hover:text-blue-900 dark:hover:bg-blue-500 font-semibold px-8 py-3 backdrop-blur-sm">
+              <Button size="lg" variant="outline" className="w-full  border-white text-blue-900 dark:bg-background/80  dark:text-white hover:bg-white hover:text-blue-900 dark:hover:bg-blue-500 font-semibold px-8 py-3 backdrop-blur-sm">
                 {t('hero.cta.portfolio')}
               </Button>
             </a>
+            </fieldset>
           </div>
 
           {/* Stats */}
