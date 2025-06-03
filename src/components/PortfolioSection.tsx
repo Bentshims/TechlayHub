@@ -12,7 +12,7 @@ const PortfolioSection = () => {
       title: t('portfolio.project1.title'),
       category: t('portfolio.project1.category'),
       description: t('portfolio.project1.description'),
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/drsd8adkq/image/upload/v1748946707/ScreenShot_Tool_-20250603115022_ecalqn.png",
       tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
       color: "from-blue-500 to-cyan-500"
     },
@@ -24,27 +24,27 @@ const PortfolioSection = () => {
       tags: ["React", "TypeScript", "Tailwind CSS", "JavaScript"],
       color: "from-purple-500 to-pink-500"
     },
-    {
-      title: t('portfolio.project3.title'),
-      category: t('portfolio.project3.category'),
-      description: t('portfolio.project3.description'),
-      image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=600&h=400&fit=crop",
-      tags: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-      color: "from-emerald-500 to-teal-500"
-    },
-    {
-      title: t('portfolio.project4.title'),
-      category: t('portfolio.project4.category'),
-      description: t('portfolio.project4.description'),
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Python"],
-      color: "from-orange-500 to-red-500"
-    },
+    // {
+    //   title: t('portfolio.project3.title'),
+    //   category: t('portfolio.project3.category'),
+    //   description: t('portfolio.project3.description'),
+    //   image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=600&h=400&fit=crop",
+    //   tags: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    //   color: "from-emerald-500 to-teal-500"
+    // },
+    // {
+    //   title: t('portfolio.project4.title'),
+    //   category: t('portfolio.project4.category'),
+    //   description: t('portfolio.project4.description'),
+    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    //   tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Python"],
+    //   color: "from-orange-500 to-red-500"
+    // },
     {
       title: t('portfolio.project5.title'),
       category: t('portfolio.project5.category'),
       description: t('portfolio.project5.description'),
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/drsd8adkq/image/upload/v1748946874/ScreenShot_Tool_-20250531163942_1_jhn4yu.png",
       tags: ["React", "TypeScript", "AdonisJS", "PostgreSQL", "Tailwind CSS"],
       color: "from-indigo-500 to-purple-500"
     },
@@ -79,19 +79,6 @@ const PortfolioSection = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                {/* <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-0 group-hover:opacity-80 transition-opacity duration-300`}></div> */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex space-x-4">
-                    <Button size="sm" className="bg-white text-gray-900 hover:bg-gray-100">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      {t('portfolio.view')}
-                    </Button>
-                    <Button size="sm" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
-                      <Github className="w-4 h-4 mr-2" />
-                      {t('portfolio.code')}
-                    </Button>
-                  </div>
-                </div> */}
               </div>
               
               <CardContent className="p-6">
