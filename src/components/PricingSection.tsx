@@ -10,7 +10,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: t('pricing.starter'),
-      price: '$799',
+      price: '$399',
       description: t('pricing.starter.description'),
       features: [
         t('pricing.starter.feature1'),
@@ -23,7 +23,7 @@ const PricingSection = () => {
     },
     {
       name: t('pricing.professional'),
-      price: '$999',
+      price: '$799',
       description: t('pricing.professional.description'),
       features: [
         t('pricing.professional.feature1'),
