@@ -52,7 +52,7 @@ const PortfolioSection = () => {
       title: t('portfolio.project6.title'),
       category: t('portfolio.project6.category'),
       description: t('portfolio.project6.description'),
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/drsd8adkq/image/upload/v1748952610/dktzwklmb4rcp6vatwaj.png",
       tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
       color: "from-cyan-500 to-blue-500"
     }
