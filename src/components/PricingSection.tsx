@@ -23,7 +23,7 @@ const PricingSection = () => {
     },
     {
       name: t('pricing.professional'),
-      price: '$799',
+      price: '$699',
       description: t('pricing.professional.description'),
       features: [
         t('pricing.professional.feature1'),
