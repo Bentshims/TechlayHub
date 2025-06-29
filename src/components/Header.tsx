@@ -41,7 +41,7 @@ const Header = () => {
     { label: t('nav.services'), href: '#services' },
     { label: t('nav.about'), href: '#about' },
     { label: t('nav.portfolio'), href: '#portfolio' },
-    { label: t('nav.testimonials'), href: '#testimonials' },
+    // { label: t('nav.testimonials'), href: '#testimonials' },
     { label: t('nav.faq'), href: '#faq' },
     { label: t('nav.pricing'), href: '#pricing' },
     { label: t('nav.contact'), href: '#contact' }
